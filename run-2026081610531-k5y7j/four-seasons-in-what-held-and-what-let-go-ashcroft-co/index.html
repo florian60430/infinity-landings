@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Four Seasons In: What Held, And What Let Go | Ashcroft &amp; Co</title>
+<meta name="description" content="Free shipping in France, thirty days to send it back. Three caps binned in a year, then one that kept its shape. This page follows that one, season by season."/>
+<meta property="og:title" content="Four Seasons In: What Held, And What Let Go | Ashcroft &amp; Co"/>
+<meta property="og:description" content="Free shipping in France, thirty days to send it back. Three caps binned in a year, then one that kept its shape. This page follows that one, season by season."/>
+<style>
+@font-face{font-family:"Poppins";src:url("https://ashcroft-flatcaps.com/cdn/fonts/poppins/poppins_n4.0ba78fa5af9b0e1a374041b3ceaadf0a43b41362.woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Poppins";src:url("https://ashcroft-flatcaps.com/cdn/fonts/poppins/poppins_n7.56758dcf284489feb014a026f3727f2f20a54626.woff2");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"Poppins";src:url("https://ashcroft-flatcaps.com/cdn/fonts/poppins/poppins_i4.846ad1e22474f856bd6b81ba4585a60799a9f5d2.woff2");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"Poppins";src:url("https://ashcroft-flatcaps.com/cdn/fonts/poppins/poppins_i7.42fd71da11e9d101e1e6c7932199f925f9eea42d.woff2");font-weight:700;font-style:italic;font-display:swap}
+@font-face{font-family:"Poppins";src:url("https://ashcroft-flatcaps.com/cdn/fonts/poppins/poppins_n6.aa29d4918bc243723d56b59572e18228ed0786f6.woff2");font-weight:600;font-style:normal;font-display:swap}
+:root{
+  --ic-primary:#6b1e30; --ic-primary-text:#ffffff; --ic-secondary:#4b1522;
+  --ic-accent:#3a261f; --ic-accent-text:#ffffff; --ic-accent-ink:#3a261f;
+  --ic-primary-text-muted:#dac7cb;
+  --ic-bg:#ffffff; --ic-surface:#f4f4f4; --ic-text:#3a261f;
+  --ic-muted:#786c68; --ic-border:#ebebeb; --ic-border-width:1px;
+  --ic-radius:9px; --ic-img-radius:0px;
+  --ic-btn-radius:2px; --ic-btn-padding:8px 25px; --ic-btn-weight:400;
+  --ic-btn-transform:none; --ic-btn-tracking:normal; --ic-btn-shadow:none;
+  --ic-card-shadow:rgba(63, 63, 68, 0.4) 0px 4px 10px 0px;
+  --ic-container:1360px; --ic-space:36px;
+  --ic-h-weight:600; --ic-h-transform:none; --ic-h-tracking:-0.015em;
+  --ic-line:1.55;
+  /* Mobile d abord : gouttiere de texte et respiration verticale du telephone.
+     Les deux valeurs remontent a leur mesure de marque dans la seule requete
+     media de la feuille, a partir de 881px. */
+  --ic-pad:20px; --ic-space-y:52px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ic-bg);color:var(--ic-text);font-family:"Poppins", -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;font-size:16px;line-height:var(--ic-line);-webkit-font-smoothing:antialiased;overflow-wrap:break-word}
+img{max-width:100%;height:auto;display:block}
+h1,h2,h3{font-family:"Poppins", -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;line-height:1.15;margin:0 0 .5em;letter-spacing:var(--ic-h-tracking);font-weight:var(--ic-h-weight);text-transform:var(--ic-h-transform)}
+h1{font-size:clamp(2.1rem,4.6vw,3.5rem)}
+h2{font-size:clamp(1.6rem,3vw,2.35rem)}
+h3{font-size:1.12rem;line-height:1.35}
+p{margin:0 0 1.05em}
+a{color:inherit}
+.ic-topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px var(--ic-pad);border-bottom:var(--ic-border-width) solid var(--ic-border);position:sticky;top:0;background:var(--ic-bg);z-index:20}
+.ic-topbar img{max-height:34px;width:auto}
+.ic-topbar .ic-brandname{font-family:"Poppins", -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;font-weight:700;font-size:1.15rem;min-width:0;overflow-wrap:anywhere}
+/* Le libelle de ce bouton n est borne nulle part : il vaut le CTA du premier bloc
+   pourvu d un, donc du texte de modele, libre. Le logo qui lui fait face est un
+   remplace : sa taille minimale automatique est sa largeur intrinseque, il ne
+   cede donc jamais un pixel. Si le bouton ne cede pas non plus, la barre ne peut
+   qu ecarter la page. D ou les deux garde-fous, qui sont la vraie regle et non un
+   reglage esthetique :
+     - min-width:0 leve la taille minimale automatique de l element flexible ;
+     - overflow-wrap:anywhere ramene sa taille min-content a un caractere, ce qui
+       couvre le pire cas, un libelle d un seul mot sans cesure possible.
+   Tant que le libelle tient, le bouton reste sur une ligne : ces deux proprietes
+   ne se declenchent qu au moment ou il deborderait. */
+.ic-topbar .ic-btn{padding:9px 18px;font-size:.85rem;white-space:normal;min-width:0;overflow-wrap:anywhere}
+/* En dessous du point de bascule la section epouse l ecran : c est cette
+   certitude qui rend exacte la sortie de gouttiere des visuels, puisque le
+   decalage lateral d une figure vaut alors exactement le padding de sa section. */
+.ic-section{max-width:none;margin:0 auto;padding:var(--ic-space-y) var(--ic-pad)}
+.ic-band{max-width:none;background:var(--ic-surface);padding-left:var(--ic-pad);padding-right:var(--ic-pad)}
+.ic-band>*{max-width:var(--ic-container);margin-left:auto;margin-right:auto}
+.ic-alt{background:transparent}
+.ic-eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:.72rem;font-weight:700;color:var(--ic-accent-ink);margin:0 0 .9em}
+.ic-sub,.ic-lead{color:var(--ic-muted);font-size:1.16rem;max-width:62ch}
+.ic-lead{font-size:1.28rem;color:var(--ic-text);opacity:.85}
+.ic-prose{max-width:68ch}
+.ic-prose h3{margin-top:1.6em}
+.ic-center{margin-left:auto;margin-right:auto;text-align:center}
+.ic-hero{display:grid;grid-template-columns:1fr;gap:34px;align-items:center}
+.ic-hero-media img{width:100%;object-fit:cover;aspect-ratio:4/5}
+.ic-split-media img{width:100%;aspect-ratio:4/3;object-fit:cover}
+/* ------------------------------------------------- visuels : bord a bord mobile
+
+   Le visuel editorial sort de la gouttiere de texte et occupe toute la largeur de
+   l ecran. Le decalage lateral vaut exactement l oppose du padding de la section,
+   pris dans la meme variable : la sortie est donc juste par construction, a toute
+   largeur, sans jamais mesurer la fenetre.
+
+   L unite vw est deliberement proscrite ici : elle compte la barre de
+   defilement, ce qui produit une page plus large que sa zone visible et
+   exactement le debordement horizontal que cette lane interdit.
+
+   Le texte, lui, garde sa gouttiere : seuls la figure et son image passent bord a
+   bord, la legende conserve le retrait lateral de la colonne. */
+.ic-figure{margin:1.4em calc(-1 * var(--ic-pad)) 0;max-width:none}
+.ic-hero-media .ic-figure,.ic-split-media .ic-figure{margin-top:0}
+/* Un bandeau recentre ses enfants directs : sans selecteur plus specifique, la
+   figure de proof-bar, stats, comparison, objections ou garantie y perdrait sa
+   sortie de gouttiere. */
+.ic-band>.ic-figure,.ic-guarantee>.ic-figure{max-width:none;margin-left:calc(-1 * var(--ic-pad));margin-right:calc(-1 * var(--ic-pad))}
+.ic-figure img{width:100%;border-radius:0}
+/* Legende posee en HTML : le texte utile n est jamais grave dans l image. */
+.ic-figcaption{font-size:.82rem;line-height:1.5;color:var(--ic-muted);margin:.7em 0 0;padding:0 var(--ic-pad);max-width:60ch}
+/* Un schema respire differemment d une photo : il n est pas recadre en cover. */
+.ic-figure[data-visual-type="diagram"] img,
+.ic-figure[data-visual-type="mechanism-visualization"] img{object-fit:contain;background:var(--ic-surface)}
+.ic-hero-points{list-style:none;padding:0;margin:1.4em 0}
+.ic-hero-points li{padding:8px 0 8px 28px;position:relative;color:var(--ic-muted)}
+.ic-hero-points li::before{content:"";position:absolute;left:0;top:17px;width:12px;height:12px;border-radius:50%;background:var(--ic-accent)}
+.ic-hero-points strong{color:var(--ic-text)}
+.ic-btn{display:inline-block;background:var(--ic-primary);color:var(--ic-primary-text);text-decoration:none;font-weight:var(--ic-btn-weight);padding:var(--ic-btn-padding);border-radius:var(--ic-btn-radius);letter-spacing:var(--ic-btn-tracking);text-transform:var(--ic-btn-transform);box-shadow:var(--ic-btn-shadow);border:0;cursor:pointer;transition:transform .15s ease,filter .15s ease}
+.ic-btn:hover{transform:translateY(-1px);filter:brightness(1.08)}
+.ic-btn:focus-visible{outline:3px solid var(--ic-accent);outline-offset:3px}
+.ic-cta-wrap{margin-top:1.8em}
+.ic-cta-sub{font-size:.85rem;color:var(--ic-muted);margin:.75em 0 0}
+.ic-split{display:grid;grid-template-columns:1fr;gap:34px;align-items:center;max-width:none}
+.ic-stats{display:flex;flex-wrap:wrap;gap:18px;justify-content:center;margin:2em auto}
+.ic-stat{flex:1 1 180px;text-align:center;padding:22px 16px;background:var(--ic-bg);border:var(--ic-border-width) solid var(--ic-border);border-radius:var(--ic-radius)}
+.ic-stat-value{display:block;font-family:"Poppins", -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;font-size:2rem;font-weight:700;color:var(--ic-primary)}
+.ic-stat-label{display:block;font-size:.86rem;color:var(--ic-muted);margin-top:6px}
+.ic-band-title{text-align:center}
+.ic-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(258px,1fr));gap:20px;margin-top:2.2em}
+.ic-card{background:var(--ic-surface);border:var(--ic-border-width) solid var(--ic-border);border-radius:var(--ic-radius);box-shadow:var(--ic-card-shadow);padding:26px}
+.ic-card h3{margin-bottom:.5em}
+.ic-card p{margin:0;color:var(--ic-muted);font-size:.97rem}
+.ic-checklist{list-style:none;padding:0;margin:1.6em 0;display:grid;gap:14px}
+.ic-checklist li{display:grid;grid-template-columns:22px 1fr;gap:12px;align-items:start}
+.ic-checklist li::before{content:"";width:18px;height:18px;margin-top:5px;border-radius:50%;background:var(--ic-accent);opacity:.22;box-shadow:inset 0 0 0 5px var(--ic-accent)}
+.ic-checklist strong{grid-column:2;display:block}
+.ic-checklist span{grid-column:2;color:var(--ic-muted);font-size:.96rem}
+.ic-table-wrap{overflow-x:auto;margin-top:2em}
+.ic-table{width:100%;border-collapse:collapse;background:var(--ic-bg);border-radius:var(--ic-radius);overflow:hidden}
+.ic-table th,.ic-table td{padding:15px 18px;text-align:left;border-bottom:var(--ic-border-width) solid var(--ic-border);font-size:.95rem;vertical-align:top}
+.ic-table thead th{background:var(--ic-primary);color:var(--ic-primary-text);font-family:"Poppins", -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif}
+.ic-table tbody th{font-weight:600;width:26%}
+.ic-ours{font-weight:600;color:var(--ic-primary)}
+.ic-grid-quotes .ic-quote{margin:0;background:var(--ic-surface);border-left:3px solid var(--ic-accent);border-radius:var(--ic-radius);padding:24px}
+.ic-quote p{font-style:italic;margin-bottom:.9em}
+.ic-quote cite{font-style:normal;font-weight:600;font-size:.88rem;color:var(--ic-muted)}
+.ic-faq{margin-top:2em;max-width:820px}
+.ic-faq details{border-bottom:var(--ic-border-width) solid var(--ic-border);padding:6px 0}
+.ic-faq summary{cursor:pointer;font-weight:600;padding:16px 0;list-style:none;display:flex;justify-content:space-between;gap:16px}
+.ic-faq summary::-webkit-details-marker{display:none}
+.ic-faq summary::after{content:"+";color:var(--ic-accent-ink);font-size:1.4rem;line-height:1}
+.ic-faq details[open] summary::after{content:"–"}
+.ic-faq details>div{padding-bottom:14px}
+/* Le bandeau garantie est le seul bloc pose sur le primaire. Tout ce qu il
+   contient doit donc partir de --ic-primary-text et non des couleurs de texte
+   du reste de la page. La declaration color sur la section elle-meme couvre le corps
+   redactionnel, qui heritait sinon de --ic-text : sur une marque dont le
+   primaire est aussi la couleur de texte (cas frequent d une identite marine ou
+   noire), ce corps devenait litteralement invisible. */
+.ic-guarantee{background:var(--ic-primary);color:var(--ic-primary-text);max-width:none}
+.ic-guarantee .ic-prose,.ic-guarantee .ic-prose *{color:var(--ic-primary-text)}
+.ic-guarantee .ic-cta-sub,.ic-guarantee .ic-lead{color:var(--ic-primary-text-muted);opacity:1}
+.ic-guarantee-inner{max-width:var(--ic-container);margin:0 auto}
+.ic-guarantee h2,.ic-guarantee h3{color:var(--ic-primary-text)}
+/* Le bandeau garantie est pose sur le primaire de la marque. Tout y est exprime
+   en fonction de --ic-primary-text : un blanc code en dur devenait illisible des
+   que le primaire de la boutique etait clair (creme, sable, pastel). */
+.ic-guarantee .ic-eyebrow,.ic-guarantee .ic-sub,.ic-guarantee .ic-checklist span{color:var(--ic-primary-text-muted)}
+.ic-guarantee .ic-btn{background:var(--ic-primary-text);color:var(--ic-primary);box-shadow:none}
+.ic-guarantee .ic-checklist li::before{background:var(--ic-primary-text);box-shadow:inset 0 0 0 5px var(--ic-primary-text);opacity:.35}
+.ic-final{text-align:center}
+.ic-final .ic-prose{margin-left:auto;margin-right:auto}
+.ic-footer{border-top:var(--ic-border-width) solid var(--ic-border);padding:30px var(--ic-pad);text-align:center;color:var(--ic-muted);font-size:.8rem}
+/* -------------------------------------------------------------- bureau
+
+   Unique requete media de la feuille, et elle monte : tout ce qui precede est le
+   rendu telephone. A partir d ici la page redevient une colonne centree, bornee a
+   la largeur de contenu mesuree sur la boutique. Une image collee aux deux bords
+   d un ecran de 1440px serait laide : les visuels y reviennent donc dans la
+   colonne, avec leur rayon de marque. */
+@media(min-width:881px){
+  :root{--ic-pad:28px; --ic-space-y:var(--ic-space)}
+  body{font-size:17px}
+  .ic-section{max-width:var(--ic-container)}
+  .ic-band,.ic-guarantee{max-width:none}
+  .ic-hero{grid-template-columns:1.05fr .95fr;gap:56px;padding-top:64px;padding-bottom:64px}
+  .ic-split{grid-template-columns:1fr 1fr;gap:56px;max-width:var(--ic-container)}
+  .ic-split.ic-alt .ic-split-media{order:-1}
+  .ic-figure,.ic-band>.ic-figure,.ic-guarantee>.ic-figure{max-width:var(--ic-container);margin-left:auto;margin-right:auto}
+  .ic-figure img{border-radius:var(--ic-img-radius)}
+  .ic-figcaption{padding:0}
+}</style>
+<style>
+/* SOL-648 : le hook ouvre la page, il ne la ponctue pas. */
+@media(max-width:880px){
+  .ic-hero{grid-template-columns:1fr}
+  .ic-hero .ic-hook-media{order:-1;margin-top:0}
+  .ic-hero .ic-hook-media .ic-figure{margin-top:0}
+  .ic-hero .ic-hook-media img{aspect-ratio:3/2;max-height:46vh;object-fit:cover}
+  .ic-hero{padding-top:24px}
+}
+@media(min-width:881px){
+  .ic-hero .ic-hook-media img{aspect-ratio:3/2}
+}</style>
+<link rel="canonical" href="https://florian60430.github.io/infinity-landings/run-2026081610531-k5y7j/four-seasons-in-what-held-and-what-let-go-ashcroft-co/"/>
+<meta property="og:url" content="https://florian60430.github.io/infinity-landings/run-2026081610531-k5y7j/four-seasons-in-what-held-and-what-let-go-ashcroft-co/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" content="https://florian60430.github.io/infinity-landings/run-2026081610531-k5y7j/assets/04-v911c8f-7d7672.png"/>
+<meta name="robots" content="noindex,follow"/>
+<meta name="x-infinity-run" content="run-2026081610531-k5y7j"/>
+<meta name="x-infinity-shop" content="ashcroft-flatcaps.com"/>
+<meta name="x-infinity-cta-policy" content="manual"/>
+<meta name="x-infinity-published-at" content="2026-08-16T11:16:25.702Z"/>
+</head>
+<body>
+<nav class="ic-topbar">
+  <img src="../assets/04-v911c8f-7d7672.png" alt="Ashcroft &amp; Co" width="500" height="183" decoding="async" srcset="../assets/04-v911c8f-7d7672.w480.webp 480w, ../assets/04-v911c8f-7d7672.png 500w" sizes="(min-width: 900px) 900px, 100vw"/>
+  <a class="ic-btn" href="https://ashcroft-flatcaps.com/products/the-ashcroft-denim-1?utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=run-2026081610531-k5y7j" data-ic-cta="manual" rel="noopener">Follow the four seasons</a>
+</nav>
+<main id="offre">
+<header data-ic-block="01-hero" data-ic-kind="hero" class="ic-section ic-hero">
+        <div class="ic-hero-copy">
+          <p class="ic-eyebrow">One cap, one wearer, four seasons of notes</p>
+          <h1>Four Seasons In: What Held, And What Let Go</h1>
+          <p class="ic-lead">Free shipping in France, thirty days to send it back. Three caps binned in a year, then one that kept its shape. This page follows that one, season by season.</p>
+          <div class="ic-prose"><p>The 6:40 train, still dark outside. He lifts the cap, sets it back down, thumb along the front seam. Ordinary. Except he does it again four stops later, and again at the barrier, because the last one had stopped holding somewhere around the second autumn.</p>
+<p>That is the difference this page is about. Not how a cap looks the day it arrives. What it does in season four, at the friction points, at the creases, on a head it has been sitting on since October.</p>
+<p>One cut, made to fit, with a side-adjuster you set once. Everything after this is the wear log.</p></div>
+          
+          <div class="ic-cta-wrap">
+      <a role="button" class="ic-btn" href="https://ashcroft-flatcaps.com/products/the-ashcroft-denim-1?utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=run-2026081610531-k5y7j" data-ic-cta="manual" rel="noopener">Follow the four seasons</a>
+      <p class="ic-cta-sub">9 washes, all on the same cut. Free worldwide shipping.</p>
+    </div>
+        </div>
+        <div class="ic-hero-media ic-hook-media"><figure class="ic-figure" data-visual-type="tension-problem"><img src="../assets/04-v911c8f-bcc279.png" alt="La minute d avant : Four Seasons In: What Held, And What Let Go" loading="lazy" width="1536" height="1024" decoding="async" srcset="../assets/04-v911c8f-bcc279.w480.webp 480w, ../assets/04-v911c8f-bcc279.w800.webp 800w, ../assets/04-v911c8f-bcc279.w1280.webp 1280w, ../assets/04-v911c8f-bcc279.png 1536w" sizes="(min-width: 900px) 900px, 100vw"/></figure></div>
+      </header>
+<section data-ic-block="02-cost-per-season" data-ic-kind="stats" class="ic-section ic-band">
+        <h2 class="ic-band-title">Three Caps A Year, Or One That Keeps Its Shape</h2>
+        <div class="ic-stats">
+          <div class="ic-stat"><span class="ic-stat-value">19%</span><span class="ic-stat-label">binned a cap because it grated or squeezed</span></div><div class="ic-stat"><span class="ic-stat-value">13%</span><span class="ic-stat-label">binned a cap because they got tired of it</span></div><div class="ic-stat"><span class="ic-stat-value">$29.99</span><span class="ic-stat-label">per cap, down from $59.98</span></div><div class="ic-stat"><span class="ic-stat-value">Buy 2, get 1</span><span class="ic-stat-label">free, with free worldwide shipping</span></div>
+        </div>
+        <div class="ic-prose ic-center"><p>Ask men why they binned a cap and the answers land in the same place. 19% say it grated or squeezed. 13% say they simply got tired of it. Neither is a taste problem. Both are a build problem, and a build problem comes back every autumn.</p>
+<p>This one is $29.99, down from $59.98, with free worldwide shipping and no minimum. Buy two, the third is free.</p>
+<p>Now do the division yourself. One cap holds its shape across seasons, or three caps hold theirs for a few weeks each. We're not putting a number of winters on it. Wear it and count.</p></div>
+        
+      </section>
+<section data-ic-block="03-the-morning-it-shows" data-ic-kind="story" class="ic-section">
+        <p class="ic-eyebrow">Season two, October</p>
+    <h2>The Season Where A Cap Starts To Give Up</h2>
+    <p class="ic-sub">It never fails on a dry day. It fails in the rain, and then again every ten minutes after that.</p>
+        <div class="ic-prose"><p>The first rain is the test. A cheap shell soaks, sags, and dries into a shape that isn't quite the one it had. Nothing tears. It just goes slack.</p>
+<p>Then the habit starts. You push it back into place at the platform. Again at the door. Again at your desk, without thinking. A cap you adjust ten times a day is a cap that has stopped holding, and you knew it before you admitted it.</p>
+<p>That's a second-season failure, and it comes back on schedule: the first cold morning, the first proper autumn, the walk to the station in a wind that wasn't forecast. You don't throw it out that week. You throw it out the following spring, and buy the same problem again.</p></div>
+        
+        
+      </section>
+<section data-ic-block="04-washed-before-cut" data-ic-kind="mechanism" class="ic-section ic-split ic-alt">
+        <div class="ic-split-copy">
+          <p class="ic-eyebrow">How it's built</p>
+    <h2>The Shrinkage Already Happened, Before The Cloth Was Ever Cut</h2>
+    <p class="ic-sub">Raw denim stiffens, then shrinks, then goes slack. This cloth did all three before anyone drew a pattern on it.</p>
+          <div class="ic-prose"><p>Cut a cap from raw denim and you hand the buyer three seasons of trouble. Season one it's board-stiff. Season two it pulls in at the first proper wash. Season three it gives up and hangs loose. The cap didn't fail. The order of operations did.</p>
+<p>Here the denim is washed as cloth, before the cut. The shrinkage is already spent. So the hand is soft from the first wear, not the fortieth, and the size doesn't move when it finally meets your sink.</p>
+<p>One honest limit: the cut stops at its upper end. Above a 61 cm head, email us at help@ashcroft-flatcaps.com before you order rather than after.</p></div>
+          <ul class="ic-checklist"><li><strong>Washed first, cut second</strong><span>The fabric loses its shrinkage as cloth. What you receive is what stays.</span></li><li><strong>Soft from day one</strong><span>No breaking-in season. The hand is already lived-in when it arrives.</span></li><li><strong>Stable at the wash</strong><span>The size doesn't move at home. It settles onto you instead of resisting.</span></li></ul>
+          
+        </div>
+        <div class="ic-split-media"></div>
+      </section>
+<section data-ic-block="05-soft-shell-close" data-ic-kind="image-split" class="ic-section ic-split">
+        <div class="ic-split-copy">
+          <p class="ic-eyebrow">Season two, still the same setting</p>
+    <h2>A Shell That Gives Way Where Your Head Says So</h2>
+    <p class="ic-sub">Set the side-adjuster once. From there the cap does the moving, not you.</p>
+          <div class="ic-prose"><p>A hard crown fights the head it sits on. Pressure lands on two or three points, the seam digs in, and you spend the day taking it off and putting it back on.</p>
+<p>This shell is soft. It follows the shape of the skull instead of imposing one, and the line sits low, following your face rather than perching above it. Nothing to keep correcting through an autumn morning.</p>
+<p>Sizing is a single gesture: one cut, one side-adjuster, set it once and it stays put. Impossible to get the size wrong. Above 61 cm of head circumference, write to us before ordering, the cut stops at its upper limit.</p></div>
+          <ul class="ic-checklist"><li><strong>Soft shell</strong><span>Gives way where the head asks, holds everywhere else.</span></li><li><strong>Low line</strong><span>Sits low and follows your face, season after season.</span></li><li><strong>One adjustment</strong><span>Side-adjuster set once, then forgotten.</span></li></ul>
+          <div class="ic-cta-wrap">
+      <a role="button" class="ic-btn" href="https://ashcroft-flatcaps.com/products/the-ashcroft-denim-1?utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=run-2026081610531-k5y7j" data-ic-cta="manual" rel="noopener">Set it once</a>
+      <p class="ic-cta-sub">100-Day Fit Guarantee: it sits right, or your money back</p>
+    </div>
+        </div>
+        <div class="ic-split-media"><figure class="ic-figure" data-visual-type="product-photo-real"><img src="../assets/04-v911c8f-9c685a.png" alt="Le side-adjuster et la retombee de la coquille sur la nuque se voient de pres, on comprend qu il se regle une fois et ne se retouche plus." loading="lazy" width="1536" height="1024" decoding="async" srcset="../assets/04-v911c8f-9c685a.w480.webp 480w, ../assets/04-v911c8f-9c685a.w800.webp 800w, ../assets/04-v911c8f-9c685a.w1280.webp 1280w, ../assets/04-v911c8f-9c685a.png 1536w" sizes="(min-width: 900px) 900px, 100vw"/></figure></div>
+      </section>
+<section data-ic-block="06-what-cheap-caps-do" data-ic-kind="comparison" class="ic-section ic-band">
+        <p class="ic-eyebrow">Construction, side by side</p>
+    <h2>What Lets Go First, And Why It Always Lets Go There</h2>
+    <p class="ic-sub">A cheap cap doesn't fail at random. It fails at the lining, the dye and the sizing, in that order, every time.</p>
+        <div class="ic-prose ic-center"><p>Look at where the failures land. Glued lining lifts with heat and blisters across the forehead. Unstable dye moves onto the skin. Sizes invented on a marketplace spec sheet fit no head in particular.</p>
+<p>This cap answers those three points with three build decisions, not three claims. The denim is washed. The cut is one cut, held by a side-adjuster you set once. The trim is tan suede.</p>
+<h3>The rule the seasons write</h3>
+<p>One cut, made to fit. Set it once and it stays put, on any head. What gives way is the shell, where your head says so, and never the construction.</p></div>
+        <div class="ic-table-wrap"><table class="ic-table">
+          <thead><tr><th></th><th>The Washed Denim Collection</th><th>Alternative</th></tr></thead>
+          <tbody><tr><th scope="row">Lining</th><td class="ic-ours">Sewn construction under a soft shell that gives way to the head</td><td>Glued lining that lifts with heat and blisters on the forehead</td></tr><tr><th scope="row">Fabric</th><td class="ic-ours">Washed denim, lived-in from the first wear</td><td>Unstable dye that transfers onto skin</td></tr><tr><th scope="row">Sizing</th><td class="ic-ours">One cut with a side-adjuster: set it once, impossible to get the size wrong</td><td>Invented sizes that fit no head in particular</td></tr><tr><th scope="row">Trim</th><td class="ic-ours">Tan suede trim</td><td>Whatever costs least that season</td></tr></tbody>
+        </table></div>
+        
+      </section>
+<section data-ic-block="07-nine-washes" data-ic-kind="benefits" class="ic-section">
+        <p class="ic-eyebrow">Nine washes, one cut</p>
+    <h2>Nine Washes. The Same Cut Underneath Every One.</h2>
+    <p class="ic-sub">The colour changes. What sits on your head does not.</p>
+        <div class="ic-prose"><p>The case we've been following is one cap. But there are nine washes of it, and the man who wears his light blue through four winters usually comes back for a second, not a replacement.</p>
+<p>Start at the everyday light blue if you want the one that disappears under a coat collar. End at the burgundy that isn't afraid of colour. Between them sit the Mariner, the Blackthorn, the Cotswold, the Chestnut, the Claret, the Sherwood, the Admiral, the Onyx.</p>
+<h3>What doesn't change</h3>
+<ul><li><strong>The cut.</strong> One cut across all nine. The shell that gives way on the Onyx is the shell that gives way on the Claret.</li><li><strong>The trim.</strong> Tan suede on every one, so each wash ages against the same fixed point.</li><li><strong>The adjuster.</strong> Set it once on the first. The second arrives already knowing your head.</li></ul>
+<p>The collection keeps growing. New washes are added to the same cut, never a new cut.</p></div>
+        <div class="ic-grid">
+          
+        </div>
+        
+      </section>
+<section data-ic-block="08-how-it-ages" data-ic-kind="mechanism" class="ic-section ic-split ic-alt">
+        <div class="ic-split-copy">
+          <p class="ic-eyebrow">Season four, still counting</p>
+    <h2>Creases, Friction Points, And The Patina That Follows</h2>
+    <p class="ic-sub">The marks that appear on this cap are the ones we designed it to take.</p>
+          <div class="ic-prose"><p>By the fourth autumn, the same cap no longer looks new. It marks at the folds, where the crown breaks the same way every time you put it on. It lightens at the friction points, the brim edge and the spot your thumb finds each morning.</p>
+<p>That is denim doing what denim does. A cheap cap loses its dye evenly and goes flat everywhere at once. Washed denim loses it where you actually touch it, so the wear maps back to the way you wear it.</p>
+<p>The patina is the point. This cap is built to age like a jean, not like an accessory: it takes your shape and keeps it, season after season, instead of resisting you until it lets go.</p></div>
+          <ul class="ic-checklist"><li><strong>Creases</strong><span>The folds set where the crown bends under your hand. The same bend, every morning, becomes the cap's own line.</span></li><li><strong>Friction points</strong><span>Colour lifts first at the edges you handle most. That lightening is the record of four winters, not a fault in the wash.</span></li><li><strong>Patina</strong><span>Washed denim already looks lived-in on day one. What follows is depth, and it only belongs to the head that wore it.</span></li></ul>
+          
+        </div>
+        <div class="ic-split-media"></div>
+      </section>
+<section data-ic-block="09-the-arithmetic-of-replacing" data-ic-kind="stats" class="ic-section ic-band">
+        <h2 class="ic-band-title">Count The Seasons Yourself</h2>
+        <div class="ic-stats">
+          <div class="ic-stat"><span class="ic-stat-value">$29.99</span><span class="ic-stat-label">Per cap, down from $59.98</span></div><div class="ic-stat"><span class="ic-stat-value">Buy 2, get 1 free</span><span class="ic-stat-label">Summer offer, all 9 washes</span></div><div class="ic-stat"><span class="ic-stat-value">19%</span><span class="ic-stat-label">Have binned a cap that grated or squeezed</span></div><div class="ic-stat"><span class="ic-stat-value">30,000+</span><span class="ic-stat-label">Satisfied customers</span></div><div class="ic-stat"><span class="ic-stat-value">Free</span><span class="ic-stat-label">Worldwide shipping, no minimum purchase</span></div>
+        </div>
+        <div class="ic-prose ic-center"><p>You know what the last three cost you. Not the price on each one, the total, plus the autumn morning each one let go.</p>
+<p>Here is what this one costs. We'll stop there.</p>
+<h3>The numbers, as they stand</h3>
+<ul><li>$29.99 instead of $59.98. Buy 2 flat caps, get 1 free. Free worldwide shipping, no minimum.</li><li>19% of buyers have thrown out a cap because it grated or squeezed. 13% because they simply grew tired of it.</li><li>30,000+ satisfied customers.</li></ul>
+<p>Divide by the seasons you intend to wear it. That sum is yours to do, not ours.</p></div>
+        
+      </section>
+<section data-ic-block="10-keeping-it-alive" data-ic-kind="usage" class="ic-section ic-split ic-alt">
+        <div class="ic-split-copy">
+          <p class="ic-eyebrow">Season five and beyond</p>
+    <h2>What Keeps It Going, Season After Season</h2>
+    <p class="ic-sub">Five minutes of care, twice a year. That's the whole protocol.</p>
+          <div class="ic-prose"><p>The denim was washed before it was cut, so nothing dramatic happens the first time you wash it at home. Cold water, mild soap, by hand. Press the water out against the side of the basin. Never wring it.</p>
+<p>Then dry it flat, on a form that holds the crown open, away from any radiator. Heat is what does the damage.</p>
+<p>The tumble dryer is the one thing that ends it. It shrinks and twists the shell in a way no amount of wear puts back, and a shell that has lost its shape never gives way where your head says so again. Everything else on this cap is built to take years. That machine takes ten minutes.</p></div>
+          <ul class="ic-checklist"><li><strong>By hand, cold</strong><span>Mild soap, cold water. The shrinkage already happened before the cut, so the size holds.</span></li><li><strong>Press, don't wring</strong><span>Squeeze the water out flat. Twisting sets creases where you never asked for them.</span></li><li><strong>Flat, on a form</strong><span>Let the crown keep its volume while it dries. Never on a radiator, never in direct heat.</span></li><li><strong>Never the dryer</strong><span>The one irreversible mistake. The shell deforms and stays deformed.</span></li></ul>
+          <div class="ic-cta-wrap">
+      <a role="button" class="ic-btn" href="https://ashcroft-flatcaps.com/products/the-ashcroft-denim-1?utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=run-2026081610531-k5y7j" data-ic-cta="manual" rel="noopener">Set one aside for the autumn</a>
+      <p class="ic-cta-sub">Free worldwide shipping, no minimum purchase</p>
+    </div>
+        </div>
+        <div class="ic-split-media"></div>
+      </section>
+<section data-ic-block="11-in-your-words" data-ic-kind="objections" class="ic-section ic-band">
+        <p class="ic-eyebrow">Straight answers</p>
+    <h2>&quot;It Grated At The Seam. It Went Out Of Shape. It Was Cheaper.&quot;</h2>
+    <p class="ic-sub">Three sentences we hear from men who have already replaced a cap this year. Here is what we say back.</p>
+        <div class="ic-prose"><p>Nineteen percent of buyers told us they binned a cap because it grated or squeezed. That is the objection to answer first, so we answer it with a limit rather than a promise.</p>
+<p>The shrinkage happened before the cut, so the size does not move at the first home wash. But the cut stops at its top end. Above 61 cm around the head, write to us before you order, and we will tell you honestly whether it will sit right.</p>
+<p>And what it is not: this is not a sports cap. It does not cover the forehead like a long peak, and it will not hold on a bike at speed. If that is what you need, this is the wrong cap.</p></div>
+        <div class="ic-faq">
+          <details><summary>&quot;It grated at the seam.&quot;</summary><div class="ic-prose"><p>The shell gives way where your head says so, and the side-adjuster is set once and stays put. Nothing to re-tighten every ten minutes.</p></div></details><details><summary>&quot;It went out of shape.&quot;</summary><div class="ic-prose"><p>Denim marks at the creases and fades at the friction points. That is patina, not collapse. What kills a shell for good is the tumble dryer.</p></div></details><details><summary>&quot;It was cheaper.&quot;</summary><div class="ic-prose"><p>Count it in seasons, not in receipts. Three cheap caps thrown out in a year cost more than one you keep wearing.</p></div></details><details><summary>&quot;I still can't see the material.&quot;</summary><div class="ic-prose"><p>Twenty-nine percent of online buyers say the same. Try it outside, not just in front of a mirror. A size exchange is handled as a priority.</p></div></details>
+        </div>
+        
+      </section>
+<section data-ic-block="12-hundred-days" data-ic-kind="guarantee" class="ic-section ic-guarantee">
+        <div class="ic-guarantee-inner">
+          <p class="ic-eyebrow">100-Day Fit Guarantee</p>
+    <h2>A Hundred Days To See How It Settles</h2>
+    <p class="ic-sub">It sits right, or your money back.</p>
+          <div class="ic-prose"><p>A hundred days is not a returns window. It is a season of wear: set the side-adjuster once, put it on every morning, take it outside rather than standing in front of a mirror. That is long enough to know whether a cap gives way where your head says so, or quietly starts pushing back.</p>
+<p>If it never settles, you send it back and get your money. No condition about the box, no argument about how much you wore it.</p>
+<ul><li>Free worldwide shipping, no minimum purchase</li><li>Secure payments, encrypted, card details never stored</li><li>Support 24/7, or write to help@ashcroft-flatcaps.com</li></ul>
+<p>One note we would rather give you now than after a second return: the cut stops at the top of its range. Above 61 cm, write to us before you order.</p></div>
+          
+          <div class="ic-cta-wrap">
+      <a role="button" class="ic-btn" href="https://ashcroft-flatcaps.com/products/the-ashcroft-denim-1?utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=run-2026081610531-k5y7j" data-ic-cta="manual" rel="noopener">Set it once and see</a>
+      <p class="ic-cta-sub">100 days to judge. It sits right, or your money back.</p>
+    </div>
+        </div>
+        
+      </section>
+<section data-ic-block="13-questions" data-ic-kind="faq" class="ic-section">
+        <p class="ic-eyebrow">Practical questions</p>
+    <h2>The Questions That Come Back Every Autumn</h2>
+    <p class="ic-sub">Everything left to settle before the first cold morning.</p>
+        <div class="ic-prose"><p>These are the ones we get every year, when the mornings turn and the cap comes back out of the drawer.</p>
+<p>Short answers below. If yours isn't here, email help@ashcroft-flatcaps.com. We answer around the clock, seven days a week.</p></div>
+        <div class="ic-faq">
+          <details><summary>How often do I adjust it?</summary><div class="ic-prose"><p>Once. Set the side-adjuster the first day and leave it. It holds from there, season after season.</p></div></details><details><summary>Can I try it on outside?</summary><div class="ic-prose"><p>Yes, and you should. A mirror tells you nothing about how a cap sits after twenty minutes on a cold platform. Wear it out, then decide.</p></div></details><details><summary>What if I need a different size?</summary><div class="ic-prose"><p>Size exchanges are the most common request and we handle them first. One note of honesty: the cut stops at its upper limit. Above 61 cm, write to us before you order.</p></div></details><details><summary>What should I never do to the denim?</summary><div class="ic-prose"><p>Tumble dryer, bleach, hot machine wash. The dryer is what warps the shell for good, and that damage doesn't come back.</p></div></details>
+        </div>
+        
+      </section>
+<section data-ic-block="14-settle-in" data-ic-kind="cta" class="ic-section ic-final">
+        <p class="ic-eyebrow">Set it once</p>
+    <h2>Let It Take Your Shape</h2>
+    <p class="ic-sub">One cut, a side-adjuster, and the seasons do the rest.</p>
+        <div class="ic-prose ic-center"><p>Nothing left to decide. The denim was washed before it was cut, so the shell starts soft and gives way where your head says so instead of pushing back. Set the side-adjuster once. It stays put.</p>
+<p>From there it only settles: creases at the fold, colour easing at the friction points, a wash that reads more like yours each season.</p>
+<p>At $29.99 instead of $59.98, buy 2 and get 1 free, free worldwide shipping, no minimum. A hundred days to see how it sits. It sits right, or your money back.</p></div>
+        
+        <div class="ic-cta-wrap">
+      <a role="button" class="ic-btn" href="https://ashcroft-flatcaps.com/products/the-ashcroft-denim-1?utm_source=meta&amp;utm_medium=paid_social&amp;utm_campaign=run-2026081610531-k5y7j" data-ic-cta="manual" rel="noopener">Set it once, wear it in</a>
+      <p class="ic-cta-sub">9 washes in stock - 100-Day Fit Guarantee - free worldwide shipping</p>
+    </div>
+      </section>
+</main>
+<footer class="ic-footer">
+  <p>Ashcroft &amp; Co - The Washed Denim Collection</p>
+  <!--
+    SOL-653 : l angle est un brief marketing interne (ciblage psychologique,
+    rédigé en français sur des pages parfois anglophones). Il ne doit apparaître
+    ni dans le corps visible, ni dans une meta, ni dans l URL d une page servie
+    à du trafic payé. Il reste consultable dans l artefact et dans le studio.
+  -->
+  <p>Publiée par Infinity Copywriting - commande et livraison assurées par The Ashcroft Denim - ashcroft-flatcaps.com.</p>
+</footer>
+</body>
+</html>
